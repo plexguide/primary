@@ -23,8 +23,8 @@ container_permissions PGID 1000
 container_permissions LC_ALL C
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/nzbget latest
-linuxserver/nzbget testing
+linuxserver/nzbget:latest
+linuxserver/nzbget:testing
 EOF
 # YML EXPORT ###################################################################
 container_core

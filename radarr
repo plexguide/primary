@@ -19,9 +19,9 @@ container_permissions PGID 1000
 
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/radarr preview
-linuxserver/radarr nightly
-linuxserver/radarr latest
+linuxserver/radarr:preview
+linuxserver/radarr:nightly
+linuxserver/radarr:latest
 EOF
 # YML EXPORT ###################################################################
 container_core

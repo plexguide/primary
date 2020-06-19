@@ -55,12 +55,12 @@ linuxserver/tautulli develop
 EOF
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/plex latest
-linuxserver/plex public
-plexinc/pms-docker latest
-plexinc/pms-docker plexpass
-plexinc/pms-docker public
-plexinc/pms-docker beta
+linuxserver/plex:latest
+linuxserver/plex:public
+plexinc/pms-docker:latest
+plexinc/pms-docker:plexpass
+plexinc/pms-docker:public
+plexinc/pms-docker:beta
 EOF
 # YML EXPORT ###################################################################
 container_core

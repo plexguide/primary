@@ -20,7 +20,7 @@ container_oddball capabilities SYS_PTRACE
 container_oddball security_opts apparmor:unconfined
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-netdata/netdata latest
+netdata/netdata:latest
 EOF
 # YML EXPORT ###################################################################
 container_core

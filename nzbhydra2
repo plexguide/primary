@@ -17,8 +17,8 @@ container_permissions PUID 1000
 container_permissions PGID 1000
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/nzbhydra2 latest
-linuxserver/nzbhydra2 dev
+linuxserver/nzbhydra2:latest
+linuxserver/nzbhydra2:dev
 EOF
 # YML EXPORT ###################################################################
 container_core

@@ -19,8 +19,8 @@ container_permissions GID 1000
 container_permissions GIDLIST 1000
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/jackett latest
-linuxserver/jackett development
+linuxserver/jackett:latest
+linuxserver/jackett:development
 EOF
 # YML EXPORT ###################################################################
 container_core
