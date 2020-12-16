@@ -17,8 +17,8 @@ container_permissions PUID 1000
 container_permissions PGID 1000
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/ombi:latest
-linuxserver/ombi:development
+ghcr.io/linuxserver/ombi:latest
+ghcr.io/linuxserver/ombi:development
 EOF
 # YML EXPORT ###################################################################
 container_core

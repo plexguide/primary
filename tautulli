@@ -21,8 +21,8 @@ container_permissions TZ Europe/London
 mkdir -p "/pg/data/plex/database/Library/Application Support/Plex Media Server/Logs"
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/tautulli:latest
-linuxserver/tautulli:develop
+ghcr.io/linuxserver/tautulli:latest
+ghcr.io/linuxserver/tautulli:develop
 EOF
 # YML EXPORT ###################################################################
 container_core

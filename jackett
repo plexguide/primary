@@ -5,7 +5,7 @@ jackett () {
 container_reset
 # VARIABLES ####################################################################
 pgrole="jackett"
-image="linuxserver/jackett"
+image="ghcr.io/linuxserver/jackett"
 port_inside01="9117"
 port_outside01="9117"
 traefik_extport="9117"
@@ -19,8 +19,8 @@ container_permissions GID 1000
 container_permissions GIDLIST 1000
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/jackett:latest
-linuxserver/jackett:development
+ghcr.io/linuxserver/jackett:latest
+ghcr.io/linuxserver/jackett:development
 EOF
 # YML EXPORT ###################################################################
 container_core
