@@ -16,7 +16,7 @@
         pgrole: 'qbittorrent'
         intport: '8080'
         extport: '8083'
-        image: 'linuxserver/qbittorrent'
+        image: 'ghcr.io/linuxserver/qbittorrent'
 
     # CORE (MANDATORY) #############################################################
     - name: 'Including cron job'

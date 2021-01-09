@@ -5,7 +5,7 @@ lidarr () {
 container_reset
 # VARIABLES ####################################################################
 pgrole="lidarr"
-image="linuxserver/lidarr"
+image="ghcr.io/linuxserver/lidarr"
 port_inside01="8686"
 port_outside01="8686"
 traefik_extport="8686"
@@ -19,8 +19,8 @@ container_permissions PUID 1000
 container_permissions PGID 1000
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/lidarr:preview
-linuxserver/lidarr:latest
+ghcr.io/linuxserver/lidarr:preview
+ghcr.io/linuxserver/lidarr:latest
 EOF
 # YML EXPORT ###################################################################
 container_core

@@ -25,8 +25,8 @@ common_main /pg/data/sabnzbd/cname.traefik sabnzbd sab_sub
 common_main /pg/var/traefik/t.domain NOT-SET sab_domain
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/sabnzbd:latest
-linuxserver/sabnzbd:unstable
+ghcr.io/linuxserver/sabnzbd:latest
+ghcr.io/linuxserver/sabnzbd:unstable
 EOF
 # YML EXPORT ###################################################################
 container_core

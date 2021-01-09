@@ -18,9 +18,9 @@ container_permissions PUID 1000
 container_permissions PGID 1000
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/sonarr:preview
-linuxserver/sonarr:nightly
-linuxserver/sonarr:latest
+ghcr.io/linuxserver/sonarr:preview
+ghcr.io/linuxserver/sonarr:nightly
+ghcr.io/linuxserver/sonarr:latest
 EOF
 # YML EXPORT ###################################################################
 container_core

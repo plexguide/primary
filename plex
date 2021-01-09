@@ -50,13 +50,13 @@ fi
 container_oddball etc_hosts "{ 'analytics.plex.tv': '127.0.0.1', 'metrics.plex.tv': '127.0.0.1' }"
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/tautulli latest
-linuxserver/tautulli develop
+ghcr.io/linuxserver/tautulli latest
+ghcr.io/linuxserver/tautulli develop
 EOF
 # IMAGES EXPORT - 1ST IS DEFAULT ###############################################
 cat <<- EOF > "/pg/images/$pgrole.images"
-linuxserver/plex:latest
-linuxserver/plex:public
+ghcr.io/linuxserver/plex:latest
+ghcr.io/linuxserver/plex:public
 plexinc/pms-docker:latest
 plexinc/pms-docker:plexpass
 plexinc/pms-docker:public
